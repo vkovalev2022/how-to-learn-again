@@ -1,7 +1,10 @@
-body, section, div, header, main, footer {
+h1, h2, p,  {
   border: 1px solid red;
 }
 
+div, body, header, main, section, footer {
+  border: 1px solid black;
+}
 
 .page {
   min-width: 1100px;
@@ -15,7 +18,6 @@ body, section, div, header, main, footer {
   color: #000;
 }
 
-
 .header {
 
   position: relative;
@@ -27,6 +29,7 @@ body, section, div, header, main, footer {
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
+  overflow:hidden;
 }
 .header__logo {
   width: 228px;
@@ -38,30 +41,41 @@ body, section, div, header, main, footer {
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__title {
-  width: 720px;
+.header__title-sbros {
+  font-size: 1em;
+  margin: 0;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
+}
+
+.header__title {
+  width: 720px;
   margin-left: 64px;
   z-index: 3;
-
-
 }
-.header__subtitle {
-  width: 388px;
+
+.header__subtitle-sbros {
+  font-size: 1em;
+  margin: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
+}
+
+.header__subtitle {
+  width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
   z-index: 2;
 }
+
 .header__link {
   text-decoration: none;
   color: #2f80ed;
 }
+
 .header__main-illustration{
   width: 756px;
   height: 608px;
@@ -69,18 +83,20 @@ body, section, div, header, main, footer {
   right: -42px;
   bottom: 0;
   z-index: 1;
-}
+  }
+
 .header__img {
 
   height: 100%;
 }
+
 .header__square-pic {
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
   position: absolute;
   top: 64px;
-  right: 0;
+  right: -38px;
   z-index: 0;
 }
 
@@ -97,8 +113,53 @@ body, section, div, header, main, footer {
 }
 
 .description {
+  display: flex;
+  justify-content: center;
+}
+
+.two-colums {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 100px;
 
+}
+.brief {
+  width: 175px;
+  color: #2f80ed;
+}
+
+.description__title-sbros{
+  font-size: 1em;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.main-text {
+  width: 80%;
+  min-width: 784px;
+}
+.description__paragraph-sbros {
+  font-size: 1em;
+  margin: 0;
+}
+
+.paragraph {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.paragraph-midle {
+  margin: 30px 0;
+}
+
+.span-accent {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
 }
 
 .digits {
