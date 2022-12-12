@@ -19,18 +19,17 @@ div, body, header, main, section, footer {
 }
 
 .header {
-
-  position: relative;
-
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
   background-color: #f2f2f2;
+  position: relative;
   display: flex;
   align-items: center;
   overflow:hidden;
 }
+
 .header__logo {
   width: 228px;
   height: 32px;
@@ -86,7 +85,6 @@ div, body, header, main, section, footer {
   }
 
 .header__img {
-
   height: 100%;
 }
 
@@ -117,7 +115,7 @@ div, body, header, main, section, footer {
   justify-content: center;
 }
 
-.two-colums {
+.description__two-colums {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -125,7 +123,7 @@ div, body, header, main, section, footer {
   padding-top: 100px;
 
 }
-.brief {
+.description__brief {
   width: 175px;
   color: #2f80ed;
 }
@@ -137,7 +135,7 @@ div, body, header, main, section, footer {
   font-weight: 400;
   line-height: 1.2;
 }
-.main-text {
+.description__main-text {
   width: 80%;
   min-width: 784px;
 }
@@ -146,7 +144,7 @@ div, body, header, main, section, footer {
   margin: 0;
 }
 
-.paragraph {
+.description__paragraph {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
@@ -163,8 +161,77 @@ div, body, header, main, section, footer {
 }
 
 .digits {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
+
+.digits__title {
+  width: 60%;
+  text-align: center;
+}
+
+.digits__title-sbros {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.digits__subtitle {
+  margin-top: 20px;
+  width: 60%;
+  text-align: center;
+}
+
+.digits__subtitle-sbros {
+  font-size: 1em;
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.digits__table {
+  width: 1100px;
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.digits__sell {
+  width: 250px;
+  margin-top: 60px;
+
+}
+
+
+.digits__sell-h3-sbros {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.digits__paragraph {
+  font-size: 1em;
+  margin: 20px 0 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+
+
 
 .feynman {
 
